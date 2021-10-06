@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../../css/noteStyles.css">
+    <meta charset="utf-8" />
+    <title>IT 403 Notes</title>
+</head>
+
+
+<body>
+    <header>
+        <nav class="headerNav">
+            <ul class="menuBar">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../maintenance.html">Maintenance</a></li>
+                <li><a href="../strings.html">Strings</a></li>
+                <li><a href="../guitarParts.html">Parts of the Guitar</a></li>
+                <li class="dropdown">
+                    <a class="dropdown dropbtn">Types of Guitars</a>
+                    <div class="dropdown-content">
+                        <a href="../typesOfGuitars/acoustic.html">Acoustic</a>
+                        <a href="../typesOfGuitars/hollowBody.html">Hollow Body</a>
+                        <a href="../typesOfGuitars/semiHollowBody.html">Semi-Hollow Body</a>
+                        <a href="../typesOfGuitars/solidBody.html">Solid Body</a>
+                    </div>
+                </li>
+                <li><a href="../guitarAccessories.html">Guitar Accessories</a></li>
+                <li><a class="active" href="buyersGuide.html">Buyers Guide</a></li>
+                <li class="dropdown">
+                    <a class="dropdown dropbtn">Notes</a>
+                    <div class="dropdown-content">
+                        <a href="moduleTwo.html">Module 2</a>
+                    </div>
+                </li>
+                <li><a href="../assignmentNavigation.html">Assignments</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="htmlInfo">
+        <!--    Website Audience
+        Screen Readers
+        Web Crawlers
+        People
+    -->
+        <h1>Quiz code 9/28/2021: GoodLuck!</h1>
+        <h1>CodeName: Elementary</h1>
+        <h1>Websites are seen by 3 different things</h1>
+        <ol>
+            <li>Screen Readers</li>
+            <li>Web Crawlers</li>
+            <li>People</li>
+        </ol>
+        <h1>Important Things</h1>
+        <ul>
+            <li>Element/Tag</li>
+            <li>Attribute</li>
+            <li>Container</li>
+            <li>Empty</li>
+            <li>Block/Inline</li>
+            <li><strong>Dont use inline styles</strong> because </li>
+        </ul>
+        <h1>Name your files stuff that makes sense</h1>
+        <p>
+            about.html
+        </p>
+        <h2>Networking Models</h2>
+        <img src="../../images/NetworkingModels.png" alt="Networking Models" />
+        <h2>Identifiers</h2>
+        <p>
+            These are all used for web crawlers and to attach it to the css
+        </p>
+
+        <!--9/30/2021-->
+        <h2>NIT Cards</h2>
+        <p>
+            Used for direct connection from one computer to another<br /> Essentially a Network Card
+        </p>
+        <h2>Hubs</h2>
+        <p>
+            Instead of wires from each nit card to each person, they all plug into a hub.<br /> It blindly repeats to
+            everyone what people are saying.
+        </p>
+
+        <h2>Ethernet</h2>
+        <p>
+            Standardized by IEEE
+        </p>
+
+        <h2>Encapsulation</h2>
+        <p>
+            TCP Sends segments<br /> Generic term is Packet<br /> Specific term is Frame at the ethernet layer<br />
+            Only properly formed frames are allowed on the network
+        </p>
+        <h2>Collisions</h2>
+        <p>
+            2 people trying to talk at the same time<br /> Destroys both frames<br /> Unavoidable
+        </p>
+
+        <h2>CSMA/CD</h2>
+        <p>
+            Carrier sense multiple access collision detect<br /> Listen before sending<br /> Don't try to send until
+            you're not recieving<br /> Decreases the collisions
+        </p>
+
+        <h2>Loopback Circuts</h2>
+        <p>
+            Two waiting devices can decide to sent at the same time causing a collision<br />
+        </p>
+
+        <h2>Collision recovery</h2>
+        <p>
+            Both send a jamming signal (not a valid frame)<br /> Flood the whole network<br /> Each sender generates its
+            own random timer value<br /> Both wait until their own timers expire before resending
+        </p>
+
+        <h2>Ethernet addresses</h2>
+        <p>
+            Between hub and loopbacks, all deices recieve al frames<br /> Each device must determine which frames are
+            meant for it<br /> So each device must have a locally unique identity<br /> Ethernet address (aka, MAC
+            address)
+            <br /> Assigned by manufacturer and is completely unique<br /> 48 but calues - written as 12 hexadecimal
+            digits, often grouped
+        </p>
+
+        <h2>Using the Ethernet Header</h2>
+        <p>
+            Contains both destination and source addresses<br /> Separate fields<br /> Header is both 802.3 & 802.2
+            <br /> Trailer is 802.3 only
+        </p>
+
+        <h2>FCS -> Frame Check Sqeuence<br />Generic -> Checksum</h2>
+
+        <h2>Switches</h2>
+
+        <p>
+            Allow multiple devices to send simultaneously<br /> Examine destination of incoming frames and forward only
+            to appropriate port<br /> Result is that only sender and recipient are involved
+        </p>
+
+        <h2>Buffering</h2>
+
+        <p>
+            Buffers are temporary storage places<br /> Used to store franes until they can be sent safely<br />
+            Eliminates collisions<br /> Takes less time than collision recovery
+        </p>
+
+        <h2>Flooding</h2>
+
+        <p>
+            Hubs send incoming frames out to all other ports<br /> Switches behave the same way when the destination is
+            not yet in their bridge table<br /> Ensures destinatino device (as well as others) gets the frame
+        </p>
+
+        <h2>Broadcasting Frames</h2>
+
+        <p>
+            Most MAC addresses are unicast addresses<br /> Refer to a specific destination device<br /> ONe MAC address
+            (all Fs) is the broadcast address<br /> Frames sent to this address are flodded by the switch
+        </p>
+
+        <h2>Adaptable Switches</h2>
+
+        <p>
+            All varieties of ethernet use the same header so switches can handle multiple speeds<br /> An
+            autonegotiation standard allows the switch and any connected NICs to automatically determine the optimal
+            speed for each connection<br /> Full Duplex
+        </p>
+
+        <h2>Broadcast Domains</h2>
+
+        <p>
+            Collection of all devices that recieve broadcast frames sent by any one of them<br /> Acts like a switch
+        </p>
+
+        <h2>Multiple separate LANs</h2>
+
+        <p>
+            Two separate LANs will require two separate switches<br /> Each switch has its own address table<br /> Each
+            LAN is its own broadcast domain<br /> Sometimes this behavior is desirable
+        </p>
+
+        <h2>Virtual LANs (VLANs)</h2>
+
+        <p>
+            Single switch supports multiple broadcast domains<br /> Each broadcast domain is a separate VLAN<br /> Uses
+            a subset of the switches ports
+        </p>
+
+        <h3>Reasons to use VLANs</h3>
+
+        <p>
+            Limit each LAN to a smaller number of computers<br /> Security
+            <br /> Creating TCP/IP subnets<br /> Lower hardware expenses
+        </p>
+
+        <h2>Switch Stacks</h2>
+
+        <p>
+            Multiple Switches can be combined into a switch stack<br /> Overcomes limit on number of available ports
+            <br /> No need to change switch logic
+        </p>
+
+        <h3>Switches in the stack add addresses on the other switches to their address table along with the port to the
+            other switch</h3>
+        <h3>Cable between switches is called a trunk</h3>
+
+        <h2>VLAN Trunking</h2>
+
+        <p>
+            When VLANs involve a switch stack, frames sent over the trunk may be ambiguous
+        </p>
+
+        <!--10/5/2021-->
+    </div>
+    <div class="cssInfo">
+
+        <h1>CSS - Cascading Stype Sheets</h1>
+        <p>
+            For appearance, not Semantics or Structure (That would be html)
+        </p>
+
+        <h3>Don't use inline styles</h3>
+        <h3>CSS has a vaidator</h3>
+
+        <h2>Font Family</h2>
+        <h3>font-family: Georgia, "Times New Roman", Times, serif</h3>
+        <p>
+            I want to pick Georgia as my font,<br /> If georgia is not on this device,<br /> I want to pick "Times New
+            Roman",
+            <br /> If you dont have that,<br /> use Times,<br /> Ok fine, use serif because you dont have anything.
+        </p>
+
+        <h3>Mono -> one/singular -> Each character takes up the same amount of space</h3>
+        <h3>Variable Spaced Fonts are the opposite</h3>
+
+        <h2>Selectors</h2>
+        <p>Stuff like Class, Id, etc.</p>
+
+        <h2>Hex Colors</h2>
+        <p>
+            color:#rrggbb;<br /> Always 6 digits in class<br /> color:#ff0000; (would be red)<br /> color:#333333;
+            (would be dark gray)<br />
+        </p>
+
+        <h3>White is the composition of All Colors (color:#ffffff;)</h3>
+        <h3>Black is No Colors (color:#000000;)</h3>
+        <h3>Colors are additive</h3>
+        <h3>color:#050505; (darker gray)</h3>
+        <h3>color:#aaaaaa; (lighter gray)</h3>
+
+        <h2>Color Choices</h2>
+        <p>
+            Picking the right colors can improve visibility<br/>
+            Don't use colors that cause problems for people with color blindness<br/>
+        </p>
+
+        <test>
+            Woah My own tag!
+        </test>
+
+    </div>
+    <div class="htmlStuff">
+        <h1>HTML</h1>
+        <h2>Headings</h2>
+        <p>
+            There are 6 sizes of headings
+        </p>
+        <h2>Example</h2>
+        <p>
+            &lt;h1&gt;Your text here!&lt;/h1&gt;
+        </p>
+        <h2>Images</h2>
+        <h3>Example</h3>
+        <p>
+            &lt;img src="link to thing" alt="name" height="etc." width="etc."&gt;
+        </p>
+        <h2>Div</h2>
+        <p>
+            Divs are just ways to break up your information
+        </p>
+        <h2>Span</h2>
+        <p>
+            No meaning, just for visual stuff<br /> Inline version of a div<br /> Similar to div<br /> Can be inside
+            things like &lt;p&gt;
+        </p>
+        <h3>Example</h3>
+        <p>
+            &lt;p&gt;Your&lt;span&gt; text &lt;/span&gt;here!&lt;p&gt;
+        </p>
+
+        <h2>Email Links</h2>
+        <h3>Example</h3>
+        <p>
+            &lt;a href="mailto:Betsy.Coleman@unh.edu"&gt;Betsy.Coleman@unh.edu&lt;/a&gt;
+        </p>
+
+        <h2>Character Entities</h2>
+        <p>
+            <textarea id="htmlExample" rows="12" cols="50" readonly style="resize: none;">
+<p>
+    & lt ; = <
+    & gt ; = >
+</p>
+            </textarea>
+        </p>
+
+        <h2>Lists</h2>
+        <h3>Description</h3>
+        <p>
+            A bulleted list is an Unordered list<br /> A numbered list is an Ordered list<br />
+
+        </p>
+        <h3>Example</h3>
+        <p>
+            <textarea id="htmlExample" rows="12" cols="50" readonly style="resize: none;">
+<ul> (ul for unordered list)
+    <li>List item</li>
+</ul>
+<ol> (ol for ordered list)
+    <li>List item</li>
+</ol>
+            </textarea>
+            <br />
+        <ul> (ul for unordered list)
+            <li>List item</li>
+        </ul>
+        <ol> (ol for ordered list)
+            <li>List item</li>
+        </ol>
+        <br /> But you can also do this!
+        <br />
+        <textarea id="htmlExample" rows="12" cols="50" readonly style="resize: none;">
+<ul> (ul for unordered list)
+    <li>List item</li>
+    <ol>
+        <li>List item in a list in a list</li>
+        <li>List item in a list in a list</li>
+        <li>List item in a list in a list</li>
+    </ol>
+</ul>
+            </textarea>
+        <br />
+        <ul> (ul for unordered list)
+            <li>List item</li>
+            <ol>
+                <li>List item in a list in a list</li>
+                <li>List item in a list in a list</li>
+                <li>List item in a list in a list</li>
+            </ol>
+        </ul>
+        </p>
+        <h2>Description/Definition</h2>
+        <p>
+            They are like lists but without the list
+        </p>
+        <dl>Stuff dl</dl>
+        <dt>This is dt</dt>
+        <dd>This is dd</dd>
+
+        <h3>Id</h3>
+        <p>
+            Id="name"
+        </p>
+        <h3>class</h3>
+        <p>
+            class="className"
+        </p>
+        <h2>Header</h2>
+        <p>
+            For the header
+        </p>
+        <h2>Nav tags</h2>
+        <p>
+            For major navigation area; used inside body
+        </p>
+        <h2>Main vs Body</h2>
+        <p>
+            Body is everything on the page while the Main is all the stuff that is the main idea<br /> Can only be a
+            decendant of body
+        </p>
+        <h2>Section</h2>
+        <p>Thematic grouping of content typically with a heading</p>
+        <section>
+            <h3>Heading</h3>
+            <p>Some stuff</p>
+        </section>
+        <h2>Articles</h2>
+        <p>
+            Sections can be in articles, but articles can also be in articles
+        </p>
+        <h2>Aside</h2>
+        <p>
+            Defines related content that isnt part of that content<br /> Sidebar can have definitions<br /> Inserts have
+            ads
+            <br />
+        </p>
+        <h2>Footer</h2>
+        <p>
+            Not part of the main idea, but has information about the creator or other usefil things etc
+        </p>
+        <h2>Figcaption</h2>
+        <p>
+            Defines a caption for a figure element
+        </p>
+        <h2>Figure</h2>
+        <p>
+            Idk
+        </p>
+        <h2>Time</h2>
+        <p>
+            A date/time
+        </p>
+    </div>
+    <h1>Html Template</h1>
+    <div class="htmlExample">
+        <div style="width: 48%; height: auto; float:left; margin: 0px;">
+            <textarea id="htmlExample" rows="12" cols="80" readonly style="resize: none;">
+<!DOCTYPE html>
+<html lang="en">
+        
+<head>
+    <title>Name of Page</title>
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <h1>Header</h1>
+    <p>paragraph</p>
+</body>
+</html></textarea>
+        </div>
+        <div style="width: 48%; height: auto; float:right; margin:0px;">
+            <h1>Header</h1>
+            <p>paragraph</p>
+        </div>
+    </div>
+    </div>
+    <footer style="width: 100%; float: none;">
+        <ul class="footerBar">
+            <li><a href="https://www.guitarcenter.com">Guitar Center</a></li>
+        </ul>
+    </footer>
+</body>
+
+
+</html>
+<!-- 
+    Element/Tag
+    Attribute
+    Contatiner
+    Empty
+    Block/Inline
+
+    Structure (HTML):
+        paragraph
+        list
+        image
+        bold
+        footer
+        etc...
+        
+        replaced element
+        Cache
+
+    Appearance (CSS):
+        Fonts
+        Color
+        Margin
+        Alignment
+        etc...
+
+
+    Website Audience
+        Screen Readers
+        Web Crawlers
+        People
+
+    Headings
+        1-6
+        use them properly
+
+    <img src="[link to thing]" alt="[name]" height="[etc.]" width="[etc.]">
+    
+    Absolute/fully qualified vs relative pathing
+    for this project USE RELATIVE
+
+    also <br/> exists
+
+    For emails
+    <a href="mailto:Betsy.Coleman@unh.edu">Betsy.Coleman@unh.edu</a>
+
+    <strong>[bolded words]</strong>
+    <em>[Italics haha]</em>
+
+    div tag
+        block element
+        can put things inside of the div
+        essentially a bag
+
+    Character Entitites (for special characters)
+        & [stuff] ;
+        mneumonic "text" way
+        numeric-decimal or hex.
+
+        &amp; ampersand
+        &lt; less than
+        &gt; greater than
+
+
+
+
+-->

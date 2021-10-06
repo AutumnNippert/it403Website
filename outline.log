@@ -1,0 +1,67 @@
+index.html
+Home
+    Basic home page introducing guitars and what they are
+    Maybe a table of contents at the bottom linking to each specific part of all the webpages
+
+//types of guitars
+acoustic.html
+Acoustic Guitars
+    Information about acoustic guitars
+        Where they are used
+        What they sound like
+
+hollowBody.html
+Hollow Body Guitars
+    Information about hollow body guitars
+        Where they are used
+        What they sound like
+
+semiHollowBody.html
+Semi-Hollow Body Guitars
+    Information about semi hollow body guitars
+        Where they are used
+        What they sound like
+
+solidBody.html
+Solid Body Guitars
+    Information about solid body guitars
+        Where they are used
+        What they sound like
+
+
+//bigger informational pages
+strings.html
+Strings
+    Information about guitar strings
+        Sizes
+        Sounds
+        Instruments
+
+buyersGuide.html
+Buyers Guide to Guitars
+    Basic buyers guide to guitars in general
+        What your needs are
+        What kind of guitar to pick
+
+maintenance.html
+Guitar Maintenance
+    Basics of guitar maintenance
+        String replacement
+        Fretboard cleaning
+
+guitarParts.html
+Parts of the guitar
+    Information relating to the different parts of the guitar
+        Definitions of words used like "nut" and "bridge"
+        Knobs
+        Tuning pegs
+        Pickups
+        Bridge
+        Neck and Body
+        
+guitarAccessories.html
+Guitar Accessories
+    Information and links to guitar accessories and what they 
+        Capos
+        Plectrums
+

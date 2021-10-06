@@ -1,0 +1,97 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #faa;
+}
+
+
+/*NOTES*/
+
+h1 {
+    font-size: xx-large;
+    background-color: #b9e3f5;
+    padding: 1%;
+    margin: 0;
+}
+
+test {
+    font-size: xx-large;
+    padding: 1%;
+    margin: 0;
+    font-weight: 900;
+}
+
+.htmlInfo aside {
+    width: 50%;
+    text-align: left;
+}
+
+.htmlInfo h2 {
+    font-size: xx-large;
+    background-color: #d6cbb7;
+    padding: 1%;
+    margin: 0;
+}
+
+.htmlInfo h3 {
+    background-color: #ddd;
+    font-size: x-large;
+    margin: 0;
+}
+
+.htmlInfo p {
+    font-size: x-large;
+    background-color: whitesmoke;
+    padding: 1%;
+    margin: 0;
+}
+
+.cssInfo h2 {
+    font-size: xx-large;
+    background-color: #e0cca5;
+    padding: 1%;
+    margin: 0;
+}
+
+.cssInfo h3 {
+    background-color: #ddd;
+    font-size: x-large;
+    margin: 0;
+}
+
+.cssInfo p {
+    font-size: x-large;
+    background-color: whitesmoke;
+    padding: 1%;
+    margin: 0;
+}
+
+.htmlStuff {
+    background-color: #faa;
+    margin: 0;
+}
+
+.htmlStuff h2 {
+    font-size: x-large;
+    background-color: #e6b9e6;
+    margin: 0;
+}
+
+.htmlStuff h3 {
+    font-size: x-large;
+    color: #333;
+    margin: 0;
+}
+
+.htmlStuff p {
+    font-size: x-large;
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+.htmlExample {
+    background-color: gray;
+    padding: 2%;
+}
