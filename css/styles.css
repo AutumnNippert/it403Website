@@ -2,10 +2,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/*old color scheme
+
 nav .menuBar {
-    /*position: fixed;
-    top: 0;
-    width: 100%;*/
+
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -19,14 +19,11 @@ nav li {
 
 nav li a {
     display: block;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-
-
-/* Change the link color to #111 (black) on hover */
 
 nav li a:hover:not(.active) {
     background-color: #111;
@@ -39,32 +36,61 @@ nav .active {
 body {
     background-color: #faa;
 }
-
-
-/*
-Guitar Maintenance
 */
 
-.materials {
-    background-color: #ffd5aa;
-    padding: 2%;
+header {
+    margin: 0;
+    background-color: #CFC2BF;
 }
 
-.stringReplacement {
-    background-color: #ffbddd;
-    padding: 2%;
+nav {
+    border-style: solid;
+    border-color: #333333;
 }
 
-.neckCleaning {
-    background-color: gray;
-    padding: 2%;
+nav .menuBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EEEEEE;
 }
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #333333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+nav li a:hover:not(.active) {
+    background-color: #CFC2BF;
+}
+
+nav .active {
+    background-color: #CFC2BF;
+}
+
+body {
+    background-color: #FFB7C2; /*FAF6F5*/
+}
+
 
 footer {
     margin: 0;
     padding: 2;
     overflow: hidden;
-    background-color: #f33;
+    background-color: #CFC2BF;
+    border-style: solid;
+    border-color: #333333;
 }
 
 footer ul {
@@ -83,14 +109,6 @@ footer a {
 }
 
 
-/*404*/
-
-.pageNotFound {
-    font-size: xx-large;
-    text-align: center;
-}
-
-
 /* The container <div> - needed to position the dropdown content */
 
 .dropdown {
@@ -104,9 +122,9 @@ footer a {
 .dropdown-content {
     display: none;
     position: fixed;
-    background-color: #333;
+    background-color: #EEEEEE;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px #0004;
     z-index: 1;
 }
 
@@ -114,7 +132,7 @@ footer a {
 /* Links inside the dropdown */
 
 .dropdown-content a {
-    color: white;
+    color: #333333;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -124,7 +142,7 @@ footer a {
 /* Change color of dropdown links on hover */
 
 .dropdown-content a:hover {
-    background-color: #ffbddd;
+    background-color: #CFC2BF;
 }
 
 

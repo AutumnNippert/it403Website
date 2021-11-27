@@ -4,6 +4,35 @@
 <head>
     <link rel="stylesheet" href="../css/styles.css">
     <meta charset="utf-8" />
+
+    <style>
+        table {
+            padding: 2%;
+            border: 1px #333333;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+            width: 95%;
+        }
+
+        th,
+        td {
+            border: 1px solid;
+            text-align: center;
+        }
+        table a {
+            color: #333333;
+            border: 5px #333333;
+            border-style: solid;
+            background-color: #FF889F;
+            padding: 5%;
+        }
+        table a:hover {
+            
+            background-color: #df768d;
+        }
+    </style>
+
     <title>Strings</title>
 </head>
 
@@ -26,11 +55,97 @@
                 </li>
                 <li><a href="guitarAccessories.html">Guitar Accessories</a></li>
                 <li><a href="buyersGuide.html">Buyers Guide</a></li>
+                <li class="dropdown">
+                    <a class="dropdown dropbtn">Notes</a>
+                    <div class="dropdown-content">
+                        <a href="notes/moduleTwo.html">Module 2</a>
+                    </div>
+                </li>
+                <li><a href="assignmentNavigation.html">Assignments</a></li>
             </ul>
         </nav>
     </header>
 
-    
+    <h1>Strings</h1>
+    <h2>Guitars can have many different sizes and kinds of strings depending on what you are looking for</h2>
+    <table>
+        <caption>Most common guitar accessories</caption>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Description</th>
+        <th>Link</th>
+        <th>Price</th>
+        <tr>
+            <td>Guitar Stand</td>
+            <td><img src="../images/accessories/stand.jpg" alt="Guitar stand" height="400" /></td>
+            <!-- https://commons.wikimedia.org/wiki/File:Takamine_guitar_on_new_guitar_stand,_with_Gibson_Les_Paul_guitar_game_controller_(2007-11-12_11.25.01_by_Clemson).jpg  -->
+            <td>
+                A guitar stand allows you to put your guitar down<br />
+                when you aren't playing it, making it easily accessible
+            </td>
+            <td>
+                <a href="https://www.guitarcenter.com/Musicians-Gear/Electric-Acoustic-and-Bass-Guitar-Stand.gc">Guitar
+                    Stand</a>
+            </td>
+            <td>$9.99 - $14.99</td>
+        </tr>
+        <tr>
+            <td>Strap</td>
+            <td><img src="../images/accessories/strap.jpg" alt="Guitar straps" width="400" /></td>
+            <!-- https://commons.wikimedia.org/wiki/File:Strapgraphics_guitar_straps.jpg -->
+            <td>
+                A guitar strap allows you to stand and play your guitar!<br />
+                Very useful for any time you might preform on stage!
+            </td>
+            <td>
+                <a href="https://www.guitarcenter.com/Ernie-Ball/2-Poly-Pro-Strap-Black-1273887998625.gc">Ernie ball
+                    Poly Pro Strap</a>
+            </td>
+            <td>$6.99</td>
+        </tr>
+        <tr>
+            <td>Tuner</td>
+            <td><img src="../images/accessories/tuner.jpg" alt="Tuner on a guitar" height="400" /></td>
+            <!-- https://en.wikipedia.org/wiki/File:LCD_clip_on_guitar_tuner.jpg -->
+            <td>
+                A guitar tuner makes it super easy to tune your<br />
+                guitar on the go! Just clip it to the end of your guitar and tune
+            </td>
+            <td>
+                <a href="https://www.guitarcenter.com/Snark/Super-Snark-2-Clip-On-Tuner-Black-1500000012454.gc">Super
+                    Snark 2 Clip-On Tuner</a>
+            </td>
+            <td>$14.99 - $29.99</td>
+        </tr>
+        <tr>
+            <td>Gig bag</td>
+            <td><img src="../images/accessories/bag.jpg" alt="Guitar gig bag" height="400" /></td>
+            <!-- https://commons.wikimedia.org/wiki/File:Bass_guitar_softcase.jpg  -->
+            <td>
+                A gig bag is a soft case to be able to carry around your <br />
+                guitar safely
+            </td>
+            <td>
+                <a
+                    href="https://www.guitarcenter.com/Road-Runner/Avenue-II-Electric-Guitar-Gig-Bag.gc?rNtt=road%20runner%20electric&index=7">Road
+                    Runner Avenue II Electric Guitar Gig Bag</a>
+            </td>
+            <td>$59.99</td>
+        </tr>
+        <tr>
+            <td>Capo</td>
+            <td><img src="../images/accessories/capo.jpg" alt="Capo on a guitar" width="400" /></td>
+            <!-- "Springless Guitar Capo v02" by Creative Tools is licensed under CC BY 2.0  -->
+            <td>
+                A capo clips on to your guitar neck and allows<br />
+                you to play chords easier in different keys
+            </td>
+            <td>
+                <a href="https://www.guitarcenter.com/Ernie-Ball/Axis-Capo-Black-1500000279271.gc">Axis Capo Black</a>
+            </td>
+            <td>$14.99</td>
+        </tr>
+    </table>
 
     <footer>
         <ul class="footerBar">
